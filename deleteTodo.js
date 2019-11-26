@@ -12,7 +12,7 @@ const refreshTodos = () => {
     printTodos();
 }
 
-const indexInput = document.querySelector('.index-input');
+const indexInput = document.querySelector('#index-input');
 
 document.querySelector('#remove-todo').addEventListener('click', function() {
     deleteTodo(indexInput.value, 1);

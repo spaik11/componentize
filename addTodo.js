@@ -1,6 +1,6 @@
 let todos = [];
 const todoOl = document.querySelector('#todo-list');
-const userInput = document.querySelector('.todo-input');
+const userInput = document.querySelector('#todo-input');
 
 const storeTodo = str => todos.push(str);
 
@@ -17,7 +17,6 @@ const printTodos = () => {
 }
 
 document.querySelector('#add-todo').addEventListener('click', function() {
-    const userInput = document.querySelector('.todo-input');
     storeTodo(userInput.value);
     printTodo(userInput.value)
     userInput.value = '';

@@ -9,16 +9,26 @@
     </head>
     <body>
     <div class="app">
-        <h1>Todo</h1>
+        <div class="jumbotron">
+        <h1 class="display-4">My Todo App</h1>
+        </div>
         <section>
-            <label for="todo-input">Add to your todo list!</label>
-            <input class="todo-input "type="text" name="todo-input"> 
-            <button id="add-todo" class="btn btn-success">ADD</button>
+            <div class="input-group mb-3">
+                <!-- <label for="todo-input">Add to your todo list!</label> -->
+                <input type="text" class="form-control" id="todo-input" placeholder="Add to your todo list!" aria-label="Add to your todo list!" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button id="add-todo" class="btn btn-success">ADD</button>
+                </div>
+            </div>
         </section>
         <section>
-            <label for="index-input">Remove an index from your todo list! (Counting from zero because coding.)</label>
-            <input class="index-input "type="text" name="index-input">
-            <button id="remove-todo" class ="btn btn-danger">REMOVE</button>
+            <div class="input-group mb-3">
+                <!-- <label for="index-input">Remove an index from your todo list! (Counting from zero because coding.)</label> -->
+                <input type="text" class="form-control" id="index-input" placeholder="Remove an index from your todo list!" aria-label="Remove an index from your todo list!" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button id="remove-todo" class ="btn btn-danger">REMOVE</button>
+                </div>
+            </div>
         </section>
         <ol id="todo-list"></ol>
     </div>
